@@ -36,3 +36,9 @@ entry("getpid");
 entry("sbrk");
 entry("sleep");
 entry("uptime");
+
+entry("dump");
+entry("dump2");
+
+entry("get_free_pages");
+entry("get_free_mem");

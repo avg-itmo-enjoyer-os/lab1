@@ -1,3 +1,5 @@
+#include "kernel/types.h"
+
 struct stat;
 
 // system calls
@@ -22,6 +24,12 @@ int getpid(void);
 char* sbrk(int);
 int sleep(int);
 int uptime(void);
+
+int dump(void);
+int dump2(int pid, int register_num, uint64 *return_value);
+
+int get_free_pages(void);
+int get_free_mem(void);
 
 // ulib.c
 int stat(const char*, struct stat*);
